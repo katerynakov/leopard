@@ -1,0 +1,414 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Koulen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kreon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+}
+
+a, a:active, a:hover {
+  text-decoration: none;
+  color: inherit;
+  -webkit-appearance: none;
+  color: inherit;
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+  color: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type=number],
+input[type=number]:hover,
+input[type=number]:focus {
+  -webkit-appearance: none;
+          appearance: none;
+  -moz-appearance: textfield;
+}
+
+button {
+  background: none;
+}
+
+.btn, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+#buttontothetop {
+  display: inline-block;
+  background: #f1d3b0;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  align-items: center;
+  border-radius: 20px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  box-shadow: 0px 4px 14px rgba(67, 0, 98, 0.15);
+}
+
+#buttontothetop::after {
+  content: "↑";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: rgb(0, 0, 0);
+}
+
+#buttontothetop:hover {
+  cursor: pointer;
+  background: #fccc96;
+}
+
+#buttontothetop:active {
+  background: #ffb764;
+}
+
+#buttontothetop.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  color: #cdb185;
+  font-family: "Kreon";
+  text-transform: lowercase;
+}
+
+h1 {
+  font-family: "Koulen";
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Krona One";
+  text-transform: uppercase;
+  font-size: 2vw;
+  padding-bottom: 2%;
+}
+
+h3 {
+  font-family: "Krona One";
+  text-transform: uppercase;
+  font-size: 1.5vw;
+}
+
+.text {
+  font-size: 1.5vw;
+  line-height: 150%;
+}
+
+.bg-img {
+  width: 100%;
+}
+.bg-img img {
+  width: 100%;
+}
+
+.text2 {
+  font-size: 1.6vw;
+  line-height: 120%;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2%;
+}
+
+main {
+  background: url(/img/bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.leo_body {
+  position: relative;
+  padding-top: 0.5%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.leo_body button {
+  position: absolute;
+  font-size: 10vw;
+  top: 50%;
+  left: 15%;
+}
+.leo_body h1 {
+  text-align: center;
+  font-size: 20vw;
+  letter-spacing: 0.105em;
+  text-transform: uppercase;
+  color: #f1d3b0;
+  text-shadow: -8.6811px 4.34055px 8.6811px #061e02;
+}
+.leo_img {
+  margin-top: -10%;
+}
+.leo_description {
+  position: absolute;
+  bottom: 9vw;
+  right: 0;
+  padding: 2% 2%;
+  background: rgba(0, 0, 0, 0.01);
+  -webkit-backdrop-filter: blur(2.5px);
+          backdrop-filter: blur(2.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 19.4471px;
+  width: 30vw;
+  text-align: center;
+  margin-left: auto;
+  padding-top: -35%;
+}
+.leo_description h3 {
+  margin-bottom: 3%;
+}
+.leo_description p.text {
+  text-align: justify;
+  line-height: 120%;
+}
+
+.hunt {
+  position: relative;
+}
+.hunt_img img {
+  margin-top: 2%;
+}
+.hunt_body {
+  position: absolute;
+  top: 0;
+}
+.hunt_line img {
+  width: 100%;
+  max-width: 40%;
+}
+.hunt_content .text:nth-child(1) {
+  margin-top: 5%;
+  text-align: right;
+  width: 85%;
+  margin-left: auto;
+}
+.hunt_content .text:nth-child(2) {
+  margin-top: 22%;
+  width: 90%;
+  margin-left: 15%;
+}
+
+.spots {
+  margin-top: 5%;
+  position: relative;
+}
+.spots_img {
+  text-align: right;
+}
+.spots_img img {
+  width: 50%;
+  height: auto;
+}
+.spots_body {
+  position: absolute;
+  top: 0;
+}
+.spots_title {
+  text-align: right;
+}
+.spots_line img {
+  width: 100%;
+  max-width: 40%;
+  float: right;
+}
+.spots_content {
+  margin-top: 5%;
+}
+.spots_content .text {
+  width: 60%;
+}
+
+.breeding {
+  margin-top: 5%;
+  position: relative;
+}
+.breeding_img {
+  padding-top: 4%;
+}
+.breeding_body {
+  position: absolute;
+  top: 0;
+}
+.breeding_line img {
+  width: 100%;
+  max-width: 40%;
+}
+.breeding_content {
+  margin-top: 30%;
+}
+.breeding_content .text {
+  width: 60%;
+}
+
+.about {
+  margin-top: 5%;
+  background: rgba(113, 83, 49, 0.45);
+}
+.about_body {
+  padding: 3% 0;
+}
+.about_row {
+  display: flex;
+}
+.about_column {
+  width: 50%;
+}
+.about_column li {
+  display: flex;
+  line-height: 150%;
+  padding-bottom: 1%;
+}
+.about_column li p {
+  padding-left: 2%;
+}
+.about_column-img {
+  text-align: center;
+}
+.about_column-img img {
+  width: 40%;
+}/*# sourceMappingURL=style.css.map */

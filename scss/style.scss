@@ -1,0 +1,259 @@
+@import "__nullstyle";
+@import "__fonts";
+@import "__buttontothetop";
+
+main{
+
+}
+html {
+  font-size: 20px;
+}
+body {
+  color: #cdb185;
+  font-family: "Kreon";
+  text-transform: lowercase;
+  
+}
+h1 {
+  font-family: "Koulen";
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Krona One";
+  text-transform: uppercase;
+  font-size: 2vw;
+  padding-bottom: 2%;
+}
+h3 {
+  font-family: "Krona One";
+  text-transform: uppercase;
+  font-size: 1.5vw;
+}
+.text {
+  font-size: 1.5vw;
+  line-height: 150%;
+}
+.bg-img{
+        width: 100%;
+        img {
+          width: 100%;
+        }
+}
+.text2 {
+  font-size: 1.6vw;
+  line-height: 120%;
+}
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2%;
+}
+main { 
+  background:   url(/img/bg.svg) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.leo {
+  &_body {
+    button{
+        position: absolute;
+        font-size: 10vw;
+        top:50%;
+        left: 15%;
+    }
+    position: relative;
+    padding-top: .5%;
+    height: fit-content;
+    h1 {
+      text-align: center;
+
+      font-size: 20vw;
+
+      letter-spacing: 0.105em;
+      text-transform: uppercase;
+
+      color: #f1d3b0;
+
+      text-shadow: -8.6811px 4.34055px 8.6811px #061e02;
+    }
+  }
+  &_img {
+ 
+    margin-top: -10%;
+  }
+  &_description {
+ 
+    position: absolute;
+    bottom: 9vw;
+    right: 0;
+    padding: 2% 2%;
+    background: rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(2.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 19.4471px;
+    width: 30vw;
+    text-align: center;
+    margin-left: auto;
+    padding-top: -35%;
+    h3 {
+      margin-bottom: 3%;
+    }
+    p.text {
+      text-align: justify;
+      line-height: 120%;
+    }
+  }
+}
+.hunt {
+position: relative;
+    &_img {
+        img {
+
+          margin-top: 2%;
+        }
+    }
+    &_body { 
+        position: absolute;
+        top: 0;
+    }
+
+    &_title {
+        
+     
+    }
+
+    &_line {
+           img{
+            width: 100%;
+           max-width: 40%;
+        }
+           }
+    &_content {
+        .text:nth-child(1){
+            margin-top: 5%;
+            text-align: right;
+            width: 85%;
+            margin-left: auto;
+        }
+        .text:nth-child(2){
+            margin-top: 22%;
+            width: 90%;
+            margin-left: 15%;
+        }
+       
+    }
+}
+
+.spots {
+    margin-top: 5%;
+    position: relative;
+    &_img {
+       text-align: right;
+        img{
+            width: 50%;
+            height: auto;
+        }
+    }
+
+    &_body {
+        position: absolute;
+        top: 0;
+        
+    }
+
+    &_title {
+      text-align: right;
+
+    }
+
+    &_line {
+        img{
+            width: 100%;
+           max-width: 40%;
+           float: right;
+        }
+    }
+
+    &_content {
+        
+   
+    margin-top: 5%;
+    .text{
+width: 60%;
+
+    }
+}
+}
+
+.breeding {
+
+    margin-top: 5%;
+    position: relative;
+    &_img {
+        padding-top: 4%;
+    }
+
+    &_body {
+        position: absolute;
+        top: 0;
+    }
+
+    &_title {}
+
+    &_line {
+        img{
+            width: 100%;
+           max-width: 40%;
+        }
+    }
+
+    &_content {
+        margin-top: 30%;
+        .text{
+            width: 60%;
+           
+        }
+    }
+}
+
+.about {
+    margin-top: 5%;
+    background: rgba(113, 83, 49, 0.45);
+
+    &_body {
+padding: 3% 0;
+    }
+
+    &_row {
+    
+        display: flex;
+     }
+
+    &_column {
+        width: 50%;
+        li{
+            display: flex;
+            line-height: 150%;
+            padding-bottom: 1%;
+            
+            p{
+                padding-left: 2%;
+            }
+        }
+    }
+
+    &_column-img {
+        text-align: center;
+        img{
+            width: 40%;
+          
+        }
+    }
+}
+.container {
+}
+.text2 {
+}

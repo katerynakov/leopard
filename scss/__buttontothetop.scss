@@ -1,0 +1,41 @@
+
+#buttontothetop {
+    display: inline-block;
+    background: #f1d3b0;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+
+    box-shadow: 0px 4px 14px rgba(67, 0, 98, 0.15);
+
+  }
+  #buttontothetop::after {
+    content: "↑";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: rgb(0, 0, 0);
+  }
+  #buttontothetop:hover {
+    cursor: pointer;
+    background: #fccc96;
+  }
+  #buttontothetop:active {
+    background: #ffb764;
+  }
+  #buttontothetop.show {
+    opacity: 1;
+    visibility: visible;
+  }
